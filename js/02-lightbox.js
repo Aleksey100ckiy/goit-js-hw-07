@@ -15,16 +15,12 @@ list.insertAdjacentHTML('beforeend', images);
 
 list.addEventListener('click', onGalleryClick);
 
-
-
-function onGalleryClick(evt) {
-    evt.preventDefault();
-
-    let lightbox = new SimpleLightbox('.gallery a', { 
+let lightbox = new SimpleLightbox('.gallery a', { 
     captionsData: 'alt',
     captionDelay: 250,
     captionPosition: 'bottom'});
-   
 
+function onGalleryClick(evt) {
+    evt.preventDefault();
 
 };
